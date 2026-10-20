@@ -1,0 +1,14 @@
+﻿,MinMax_min,MinMax_max,Z_mean,Z_std
+alcohol,0.0,1.0,-0.0,1.0
+malic_acid,0.0,1.0,-0.0,1.0
+ash,0.0,1.0,0.0,1.0
+alcalinity_of_ash,0.0,1.0,-0.0,1.0
+magnesium,0.0,1.0,-0.0,1.0
+total_phenols,0.0,1.0,0.0,1.0
+flavanoids,0.0,1.0,0.0,1.0
+nonflavanoid_phenols,0.0,1.0,0.0,1.0
+proanthocyanins,0.0,1.0,-0.0,1.0
+color_intensity,0.0,1.0,0.0,1.0
+hue,0.0,1.0,0.0,1.0
+od280/od315_of_diluted_wines,0.0,1.0,0.0,1.0
+proline,0.0,1.0,0.0,1.0

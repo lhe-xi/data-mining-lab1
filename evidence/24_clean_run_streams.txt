@@ -1,0 +1,95 @@
+CELL 1
+c:\Users\Qxi\miniconda3\envs\dm-labs\python.exe
+
+
+CELL 2
+特征表形状： (178, 13)
+类别标签数量： (178,)
+各类别样本数：
+target
+0    59
+1    71
+2    48
+Name: count, dtype: int64
+缺失单元格总数： 0
+
+
+CELL 3
+<class 'pandas.DataFrame'>
+RangeIndex: 178 entries, 0 to 177
+Data columns (total 13 columns):
+ #   Column                        Non-Null Count  Dtype  
+---  ------                        --------------  -----  
+ 0   alcohol                       178 non-null    float64
+ 1   malic_acid                    178 non-null    float64
+ 2   ash                           178 non-null    float64
+ 3   alcalinity_of_ash             178 non-null    float64
+ 4   magnesium                     178 non-null    float64
+ 5   total_phenols                 178 non-null    float64
+ 6   flavanoids                    178 non-null    float64
+ 7   nonflavanoid_phenols          178 non-null    float64
+ 8   proanthocyanins               178 non-null    float64
+ 9   color_intensity               178 non-null    float64
+ 10  hue                           178 non-null    float64
+ 11  od280/od315_of_diluted_wines  178 non-null    float64
+ 12  proline                       178 non-null    float64
+dtypes: float64(13)
+memory usage: 18.2 KB
+
+
+CELL 7
+缺失单元格数： 156
+实际缺失比例：6.74%
+含缺失值的行数： 100
+删除整行将损失：56.18%
+删除后剩余行数： 78
+原始 X 的缺失数： 0
+
+
+CELL 9
+注入前均值： 99.80246913580248
+注入后均值： 104.70696351782495
+X_mean 对应位置仍为： 127.0
+剩余缺失数： 0
+
+
+CELL 10
+注入点被 IQR 标记： True
+注入点被 Z-score 标记： True
+IQR 异常单元格数： 42
+IQR 涉及样本行数： 38
+Z-score 异常单元格数： 13
+Z-score 涉及样本行数： 12
+
+
+CELL 11
+magnesium 的 Q1： 89.0
+magnesium 的 Q3： 106.0
+
+
+CELL 12
+盖帽后的形状： (178, 13)
+修改的单元格数： 42
+仍超出原边界的数量： 0
+注入点盖帽后： 131.5
+处理前副本仍为： 1000.0
+剩余缺失数： 0
+
+
+CELL 13
+Min-Max 形状： (178, 13)
+Z-score 形状： (178, 13)
+Min-Max 最小值约为 0： True
+Min-Max 最大值约为 1： True
+Z-score 均值约为 0： True
+Z-score 总体标准差约为 1： True
+
+
+CELL 15
+编码表形状： (178, 3)
+每行之和都为 1： True
+索引与特征表对齐： True
+
+
+CELL 16
+标签映射： {'blue': np.int64(0), 'green': np.int64(1), 'red': np.int64(2)}

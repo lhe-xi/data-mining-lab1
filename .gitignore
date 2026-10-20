@@ -1,0 +1,26 @@
+# Python and notebooks
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+
+# Word locks, local previews, backups and authoring tools
+~$*
+tmp/
+output/
+evidence/*.docx
+evidence/*.ipynb
+evidence/*.png
+evidence/01_create_environment.txt
+evidence/03_install_dependencies.txt
+evidence/25_material_audit.json
+evidence/github_*.json
+
+# Local working notes; formal submission is the DOCX
+实验报告_草稿.md
+实验报告.md
+实验安排.md
+环境检查记录.md
+提交前检查.md
+复现与提交说明.md
+prepare_submission.py

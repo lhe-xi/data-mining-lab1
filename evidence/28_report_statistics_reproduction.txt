@@ -1,0 +1,45 @@
+Report statistics export using original code cells 2,7,8,9,10,12,13,15,16.
+No Notebook modification. Existing results independently matched: missing=156, drop rows=78, IQR=42, Z-score=13, capped injection=131.5, onehot=(178,3).
+Scaling comparison std uses ddof=0 for all stages. Newly exported values are actual rerun statistics, not inferred from figures.
+
+特征表形状： (178, 13)
+类别标签数量： (178,)
+各类别样本数：
+target
+0    59
+1    71
+2    48
+Name: count, dtype: int64
+缺失单元格总数： 0
+缺失单元格数： 156
+实际缺失比例：6.74%
+含缺失值的行数： 100
+删除整行将损失：56.18%
+删除后剩余行数： 78
+原始 X 的缺失数： 0
+注入前均值： 99.80246913580248
+注入后均值： 104.70696351782495
+X_mean 对应位置仍为： 127.0
+剩余缺失数： 0
+注入点被 IQR 标记： True
+注入点被 Z-score 标记： True
+IQR 异常单元格数： 42
+IQR 涉及样本行数： 38
+Z-score 异常单元格数： 13
+Z-score 涉及样本行数： 12
+盖帽后的形状： (178, 13)
+修改的单元格数： 42
+仍超出原边界的数量： 0
+注入点盖帽后： 131.5
+处理前副本仍为： 1000.0
+剩余缺失数： 0
+Min-Max 形状： (178, 13)
+Z-score 形状： (178, 13)
+Min-Max 最小值约为 0： True
+Min-Max 最大值约为 1： True
+Z-score 均值约为 0： True
+Z-score 总体标准差约为 1： True
+编码表形状： (178, 3)
+每行之和都为 1： True
+索引与特征表对齐： True
+标签映射： {'blue': np.int64(0), 'green': np.int64(1), 'red': np.int64(2)}

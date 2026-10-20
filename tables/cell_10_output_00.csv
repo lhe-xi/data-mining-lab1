@@ -1,0 +1,14 @@
+﻿,IQR_count,Z_score_count
+alcohol,0,0
+malic_acid,5,2
+ash,5,3
+alcalinity_of_ash,5,1
+magnesium,6,1
+total_phenols,0,0
+flavanoids,0,1
+nonflavanoid_phenols,0,0
+proanthocyanins,7,1
+color_intensity,9,2
+hue,1,1
+od280/od315_of_diluted_wines,0,0
+proline,4,1
