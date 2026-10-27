@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-27",
+  "repository": "https://github.com/lhe-xi/data-mining-lab1",
+  "branch": "main",
+  "materials_commit": "0cb5e709813e5afbfd9cff624781e5cb544b9ea3",
+  "materials_tree": "0cd3a3a1f4ff4184ce78be61a7b5238df0a83b33",
+  "uploaded_files": 71,
+  "every_uploaded_blob_sha_matched_local_bytes": true,
+  "remote_fetched_and_tree_compared": true,
+  "docx_sha256": "cfd4de902a613bdfae9cef4229712dab08170acace3d796b1a24a71e734edd09",
+  "method": "GitHub connector Git data API after direct push connection failures",
+  "scope": "lab2 final materials and root README; lab1 uncommitted changes excluded"
+}
