@@ -1,0 +1,137 @@
+{
+  "execution_time": "2026-10-27T09:58:38.145404+08:00",
+  "executor": "assistant at user request",
+  "python": "3.11.17",
+  "executable": "C:\\Users\\Qxi\\miniconda3\\envs\\dm-labs\\python.exe",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2"
+  },
+  "data_sha256": "25e2eb7b7a8745b1bde5ba18bc4969983d2e2f403291ecd5bde4a29ef30c3859",
+  "shape": [
+    569,
+    30
+  ],
+  "label_mapping": {
+    "0": "malignant",
+    "1": "benign"
+  },
+  "positive_label": 0,
+  "counts": [
+    212,
+    357
+  ],
+  "train_counts": [
+    148,
+    250
+  ],
+  "test_counts": [
+    64,
+    107
+  ],
+  "split": {
+    "test_size": 0.3,
+    "random_state": 42,
+    "stratify": true
+  },
+  "cv": {
+    "folds": 5,
+    "shuffle": true,
+    "random_state": 42,
+    "scoring": "accuracy"
+  },
+  "search": {
+    "KNN": {
+      "params": {
+        "model__metric": "manhattan",
+        "model__n_neighbors": 7
+      },
+      "cv_mean": 0.9723734177215191,
+      "cv_std": 0.00940656239649808,
+      "candidate_count": 14,
+      "search_seconds": 0.6186701000000312,
+      "refit_seconds": 0.001169443130493164
+    },
+    "Tree": {
+      "params": {
+        "max_depth": 5,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5
+      },
+      "cv_mean": 0.9346518987341772,
+      "cv_std": 0.020158749471620857,
+      "candidate_count": 36,
+      "search_seconds": 0.7147388999999293,
+      "refit_seconds": 0.0
+    },
+    "GaussianNB": {
+      "params": {
+        "var_smoothing": 1e-07
+      },
+      "cv_mean": 0.9321518987341773,
+      "cv_std": 0.010072243450537822,
+      "candidate_count": 7,
+      "search_seconds": 0.07352900000000773,
+      "refit_seconds": 0.0010018348693847656
+    }
+  },
+  "variants": {
+    "MultinomialNB": {
+      "cv_mean": 0.8918987341772151,
+      "cv_std": 0.02607975116687529
+    },
+    "BernoulliNB": {
+      "cv_mean": 0.9270569620253164,
+      "cv_std": 0.021964852260330334
+    }
+  },
+  "postprune": {
+    "params": {
+      "ccp_alpha": 0.005
+    },
+    "cv_mean": 0.9421835443037974
+  },
+  "tree": {
+    "base_depth": 6,
+    "base_leaves": 16,
+    "tuned_depth": 5,
+    "tuned_leaves": 13,
+    "postprune_depth": 4,
+    "sample_row_index": 14,
+    "sample_true_label": 0,
+    "sample_predicted_label": 0,
+    "sample_path": [
+      {
+        "feature": "worst radius",
+        "value": 15.03,
+        "threshold": 16.795000076293945,
+        "branch": "left (<=)"
+      },
+      {
+        "feature": "worst concave points",
+        "value": 0.2208,
+        "threshold": 0.14315000176429749,
+        "branch": "right (>)"
+      },
+      {
+        "feature": "worst texture",
+        "value": 32.01,
+        "threshold": 23.739999771118164,
+        "branch": "right (>)"
+      },
+      {
+        "feature": "mean fractal dimension",
+        "value": 0.07682,
+        "threshold": 0.06087999977171421,
+        "branch": "right (>)"
+      }
+    ]
+  },
+  "scaling_check": {
+    "same_tree_predictions": true
+  },
+  "timing": "Base/refit includes pipeline scaling if present; search total reported separately. Single-run timings vary."
+}

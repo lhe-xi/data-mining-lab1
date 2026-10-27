@@ -1,0 +1,5 @@
+PASS: 11 prediction files independently reproduce all metrics and confusion matrices.
+PASS: candidate counts, five-fold outputs and selected CV scores verified.
+PASS: final KNN baseline reproduces the saved student split, predictions and probabilities.
+PASS: fresh-process rerun matches all 11 model configurations; timings excluded.
+ALL VALIDATION CHECKS PASSED

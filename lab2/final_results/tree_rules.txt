@@ -1,0 +1,46 @@
+|--- worst radius <= 16.80
+|   |--- worst concave points <= 0.14
+|   |   |--- smoothness error <= 0.00
+|   |   |   |--- worst fractal dimension <= 0.07
+|   |   |   |   |--- class: 1
+|   |   |   |--- worst fractal dimension >  0.07
+|   |   |   |   |--- class: 0
+|   |   |--- smoothness error >  0.00
+|   |   |   |--- area error <= 35.44
+|   |   |   |   |--- worst texture <= 33.27
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- worst texture >  33.27
+|   |   |   |   |   |--- worst texture <= 33.80
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- worst texture >  33.80
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |--- area error >  35.44
+|   |   |   |   |--- worst smoothness <= 0.15
+|   |   |   |   |   |--- compactness error <= 0.01
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- compactness error >  0.01
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- worst smoothness >  0.15
+|   |   |   |   |   |--- class: 0
+|   |--- worst concave points >  0.14
+|   |   |--- worst texture <= 23.74
+|   |   |   |--- worst radius <= 16.08
+|   |   |   |   |--- class: 1
+|   |   |   |--- worst radius >  16.08
+|   |   |   |   |--- class: 0
+|   |   |--- worst texture >  23.74
+|   |   |   |--- mean fractal dimension <= 0.06
+|   |   |   |   |--- class: 1
+|   |   |   |--- mean fractal dimension >  0.06
+|   |   |   |   |--- class: 0
+|--- worst radius >  16.80
+|   |--- texture error <= 0.45
+|   |   |--- class: 1
+|   |--- texture error >  0.45
+|   |   |--- worst concavity <= 0.19
+|   |   |   |--- worst texture <= 30.98
+|   |   |   |   |--- class: 1
+|   |   |   |--- worst texture >  30.98
+|   |   |   |   |--- class: 0
+|   |   |--- worst concavity >  0.19
+|   |   |   |--- class: 0

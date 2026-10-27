@@ -1,0 +1,11 @@
+rows=true, cols=predicted, order=[malignant (0), benign (1)]
+[[ 50  14]
+ [  3 104]]
+               precision    recall  f1-score   support
+
+malignant (0)   0.943396  0.781250  0.854701        64
+   benign (1)   0.881356  0.971963  0.924444       107
+
+     accuracy                       0.900585       171
+    macro avg   0.912376  0.876606  0.889573       171
+ weighted avg   0.904576  0.900585  0.898342       171

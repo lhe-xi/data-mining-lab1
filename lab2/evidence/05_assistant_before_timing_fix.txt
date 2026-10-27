@@ -1,0 +1,210 @@
+Execution: 2026-10-27T09:57:37.816410+08:00
+Python: C:\Users\Qxi\miniconda3\envs\dm-labs\python.exe
+Labels: 0=malignant, 1=benign; positive class=malignant (0)
+Shape: (569, 30) train/test: (398, 30) (171, 30)
+Class counts all/train/test: [212 357] [148 250] [ 64 107]
+
+KNN base
+[[ 57   7]
+ [  0 107]]
+               precision    recall  f1-score   support
+
+malignant (0)   1.000000  0.890625  0.942149        64
+   benign (1)   0.938596  1.000000  0.968326       107
+
+     accuracy                       0.959064       171
+    macro avg   0.969298  0.945312  0.955237       171
+ weighted avg   0.961578  0.959064  0.958529       171
+
+
+KNN tuned
+[[ 57   7]
+ [  0 107]]
+               precision    recall  f1-score   support
+
+malignant (0)   1.000000  0.890625  0.942149        64
+   benign (1)   0.938596  1.000000  0.968326       107
+
+     accuracy                       0.959064       171
+    macro avg   0.969298  0.945312  0.955237       171
+ weighted avg   0.961578  0.959064  0.958529       171
+
+
+Tree base
+[[ 57   7]
+ [  7 100]]
+               precision    recall  f1-score   support
+
+malignant (0)   0.890625  0.890625  0.890625        64
+   benign (1)   0.934579  0.934579  0.934579       107
+
+     accuracy                       0.918129       171
+    macro avg   0.912602  0.912602  0.912602       171
+ weighted avg   0.918129  0.918129  0.918129       171
+
+
+Tree tuned
+[[58  6]
+ [ 8 99]]
+               precision    recall  f1-score   support
+
+malignant (0)   0.878788  0.906250  0.892308        64
+   benign (1)   0.942857  0.925234  0.933962       107
+
+     accuracy                       0.918129       171
+    macro avg   0.910823  0.915742  0.913135       171
+ weighted avg   0.918878  0.918129  0.918372       171
+
+
+GaussianNB base
+[[ 57   7]
+ [  2 105]]
+               precision    recall  f1-score   support
+
+malignant (0)   0.966102  0.890625  0.926829        64
+   benign (1)   0.937500  0.981308  0.958904       107
+
+     accuracy                       0.947368       171
+    macro avg   0.951801  0.935967  0.942867       171
+ weighted avg   0.948205  0.947368  0.946899       171
+
+
+GaussianNB tuned
+[[ 55   9]
+ [  2 105]]
+               precision    recall  f1-score   support
+
+malignant (0)   0.964912  0.859375  0.909091        64
+   benign (1)   0.921053  0.981308  0.950226       107
+
+     accuracy                       0.935673       171
+    macro avg   0.942982  0.920342  0.929659       171
+ weighted avg   0.937468  0.935673  0.934831       171
+
+
+MultinomialNB variant
+[[ 50  14]
+ [  3 104]]
+               precision    recall  f1-score   support
+
+malignant (0)   0.943396  0.781250  0.854701        64
+   benign (1)   0.881356  0.971963  0.924444       107
+
+     accuracy                       0.900585       171
+    macro avg   0.912376  0.876606  0.889573       171
+ weighted avg   0.904576  0.900585  0.898342       171
+
+
+BernoulliNB variant
+[[ 60   4]
+ [  6 101]]
+               precision    recall  f1-score   support
+
+malignant (0)   0.909091  0.937500  0.923077        64
+   benign (1)   0.961905  0.943925  0.952830       107
+
+     accuracy                       0.941520       171
+    macro avg   0.935498  0.940713  0.937954       171
+ weighted avg   0.942138  0.941520  0.941694       171
+
+
+KNN_raw scale_check
+[[ 57   7]
+ [  6 101]]
+               precision    recall  f1-score   support
+
+malignant (0)   0.904762  0.890625  0.897638        64
+   benign (1)   0.935185  0.943925  0.939535       107
+
+     accuracy                       0.923977       171
+    macro avg   0.919974  0.917275  0.918586       171
+ weighted avg   0.923799  0.923977  0.923854       171
+
+
+Tree_scaled scale_check
+[[ 57   7]
+ [  7 100]]
+               precision    recall  f1-score   support
+
+malignant (0)   0.890625  0.890625  0.890625        64
+   benign (1)   0.934579  0.934579  0.934579       107
+
+     accuracy                       0.918129       171
+    macro avg   0.912602  0.912602  0.912602       171
+ weighted avg   0.918129  0.918129  0.918129       171
+
+
+Tree_postprune extra
+[[ 57   7]
+ [  5 102]]
+               precision    recall  f1-score   support
+
+malignant (0)   0.919355  0.890625  0.904762        64
+   benign (1)   0.935780  0.953271  0.944444       107
+
+     accuracy                       0.929825       171
+    macro avg   0.927567  0.921948  0.924603       171
+ weighted avg   0.929632  0.929825  0.929592       171
+
+
+FINAL COMPARISON
+          model       phase  accuracy  precision   recall       f1      auc  fit_seconds  train_accuracy  TP  FN  FP  TN
+           KNN        base  0.959064   1.000000 0.890625 0.942149 0.982696     0.001631        0.972362  57   7   0 107
+           KNN       tuned  0.959064   1.000000 0.890625 0.942149 0.985616     0.001744        0.972362  57   7   0 107
+          Tree        base  0.918129   0.890625 0.890625 0.890625 0.912602     0.004015        1.000000  57   7   7 100
+          Tree       tuned  0.918129   0.878788 0.906250 0.892308 0.943341     0.000000        0.984925  58   6   8  99
+    GaussianNB        base  0.947368   0.966102 0.890625 0.926829 0.990070     0.001555        0.944724  57   7   2 105
+    GaussianNB       tuned  0.935673   0.964912 0.859375 0.909091 0.983499     0.000000        0.932161  55   9   2 105
+ MultinomialNB     variant  0.900585   0.943396 0.781250 0.854701 0.935164     0.000999        0.891960  50  14   3 104
+   BernoulliNB     variant  0.941520   0.909091 0.937500 0.923077 0.988318     0.001728        0.932161  60   4   6 101
+       KNN_raw scale_check  0.923977   0.904762 0.890625 0.897638 0.948890     0.000596        0.949749  57   7   6 101
+   Tree_scaled scale_check  0.918129   0.890625 0.890625 0.890625 0.912602     0.005202        1.000000  57   7   7 100
+Tree_postprune       extra  0.929825   0.919355 0.890625 0.904762 0.921948     0.003592        0.984925  57   7   5 102
+
+K CURVE
+  k  test_accuracy  train_accuracy  cv_mean   cv_std
+ 1       0.959064        1.000000 0.944715 0.021896
+ 3       0.953216        0.972362 0.969842 0.006191
+ 5       0.959064        0.972362 0.967373 0.012736
+ 7       0.964912        0.972362 0.964873 0.012210
+ 9       0.964912        0.969849 0.967342 0.015107
+11       0.964912        0.972362 0.964810 0.009492
+15       0.959064        0.969849 0.964842 0.004924
+
+SEARCH
+ {
+  "KNN": {
+    "params": {
+      "model__metric": "manhattan",
+      "model__n_neighbors": 7
+    },
+    "cv_mean": 0.9723734177215191,
+    "cv_std": 0.00940656239649808,
+    "candidate_count": 14,
+    "search_seconds": 0.5543099000000211,
+    "refit_seconds": 0.0017435550689697266
+  },
+  "Tree": {
+    "params": {
+      "max_depth": 5,
+      "min_samples_leaf": 2,
+      "min_samples_split": 5
+    },
+    "cv_mean": 0.9346518987341772,
+    "cv_std": 0.020158749471620857,
+    "candidate_count": 36,
+    "search_seconds": 0.7192727999999988,
+    "refit_seconds": 0.0
+  },
+  "GaussianNB": {
+    "params": {
+      "var_smoothing": 1e-07
+    },
+    "cv_mean": 0.9321518987341773,
+    "cv_std": 0.010072243450537822,
+    "candidate_count": 7,
+    "search_seconds": 0.07897009999999227,
+    "refit_seconds": 0.0
+  }
+}
+PASS: complete experiment executed and outputs saved to C:\Users\Qxi\Desktop\Course\Major\Data Mining\Labs\lab2\final_results

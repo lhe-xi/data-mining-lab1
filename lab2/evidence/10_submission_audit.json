@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-27",
+  "docx_pages": 15,
+  "all_pages_visually_inspected": true,
+  "images": 10,
+  "tables": 11,
+  "no_placeholders": true,
+  "linked_report_images_exist": true,
+  "reference_unchanged": true,
+  "render_method": "Word read-only ExportAsFixedFormat + Poppler; packaged render_docx.py unavailable without LibreOffice",
+  "numerical_validation": "08_validation.txt",
+  "docx_sha256": "cfd4de902a613bdfae9cef4229712dab08170acace3d796b1a24a71e734edd09"
+}

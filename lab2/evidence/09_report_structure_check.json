@@ -1,0 +1,14 @@
+{
+  "reference_sha256": "50521d9d8e7711b3c9cda30a650a9ce2ca71829ca2bc49f6c8994d9860b5abb3",
+  "reference_unchanged": true,
+  "preserved_package_parts": 21,
+  "editable_parts": [
+    "[Content_Types].xml",
+    "word/_rels/document.xml.rels",
+    "word/document.xml",
+    "word/styles.xml"
+  ],
+  "page_geometry_preserved": true,
+  "output": "2410311413_何霖洁_实验二分类算法报告.docx",
+  "content_blocks": 105
+}
